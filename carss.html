@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Automotive Risk Scoring System (CARSS)</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/CARSS.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Lucida, monospace;
+            margin: 20px;
+            padding: 0;
+            background-color: #2c2c2c; /* Dark grey background */
+            color: #ffffff; /* White font color */
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #3c3c3c; /* Slightly lighter grey for the container */
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            background-color: #3c3c3c; /* Slightly lighter grey */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #555555;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .banner {
+            text-align: center;
+        }
+        .banner img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .intro {
+            padding: 20px;
+            background-color: #3c3c3c;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .intro h2 {
+            text-align: center;
+        }
+        .features, .benefits {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #3c3c3c;
+            border-radius: 8px;
+        }
+        .features h2, .benefits h2 {
+            text-align: center;
+        }
+        .feature-list, .benefit-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .feature-item, .benefit-item {
+            flex: 1 1 calc(50% - 40px); /* Responsive columns */
+            margin: 10px;
+            padding: 10px;
+            color: black;
+            background-color: #F8D568;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .cta {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cta button {
+            padding: 15px 30px;
+            background-color: #F8D568;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .cta button:hover {
+            background-color: #BFAFB2;
+        }
+        footer {
+            text-align: center;
+            max-width: 800px;
+            margin-top: 80px;
+            margin-bottom: auto;
+            padding: 10px;
+            background-color: #3c3c3c; /* Slightly lighter grey for the container */
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            justify-content: space-around
+        }
+        footer a {
+            color: inherit;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .feature-item, .benefit-item {
+                flex: 1 1 100%; /* Make items full-width on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Introduction Section -->
+    <div class="container">
+        <div class="intro">
+        <!-- Banner Section -->
+        <div class="banner">
+        <img src="images/CARSS%20Banner.png" alt="CARSS Banner">
+        </div>
+
+            <p>The <b>Cyber Automotive Risk Scoring System (CARSS)</b> is a tool that helps assess and measure cybersecurity risks in automotive systems. Following ISO/SAE 21434 standard, CARSS offers a clear and consistent way to evaluate and score cyber risks.</p>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features">
+            <h2>Key Features</h2>
+            <ul class="feature-list">
+                <li class="feature-item">Comprehensive Risk Assessment</li>
+                <li class="feature-item">Based on ISO/SAE 21434</li>
+                <li class="feature-item">CAL Value, Attack Feasibility & Risk Value Analysis</li>
+                <li class="feature-item">User-Friendly Interface</li>
+                <li class="feature-item">Real-Time Scoring System</li>
+                <li class="feature-item">Customizable Risk Parameters</li>
+            </ul>
+        </div>
+
+        <!-- Benefits Section -->
+        <div class="benefits">
+            <h2>Why Choose CARSS?</h2>
+            <ul class="benefit-list">
+                <li class="benefit-item">Speed up your risk calculation during TARA</li>
+                <li class="benefit-item">Provides a structured and consistent risk assessment</li>
+                <li class="benefit-item">Helps in complying with industry standards</li>
+                <li class="benefit-item">Facilitates informed decision-making on risk management</li>
+                <li class="benefit-item">Improves vehicle security against cyber threats</li>
+                <li class="benefit-item">Suitable for cybersecurity professionals, manufacturers, and suppliers</li>
+            </ul>
+        </div>
+
+        <!-- Call-To-Action Section -->
+        <div class="cta">
+            <button onclick="window.location.href='https://autorisk.in/';"><b>Get Started with CARSS</b></button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+        Made with ❤️ by <a href="https://www.google.com" target="_blank">souravbaghz</a>
+    </footer>
+    </div>
+</body>
+</html>
