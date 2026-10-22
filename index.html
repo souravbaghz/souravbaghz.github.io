@@ -33,6 +33,7 @@
       <nav class="nav" data-nav>
         <a href="#about" class="nav-link">About</a>
         <a href="#experience" class="nav-link">Experience</a>
+        <a href="#talks" class="nav-link">Talks</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#writing" class="nav-link">Writing</a>
         <a href="/carss" class="nav-link">CARSS</a>
@@ -94,6 +95,7 @@
         <ul class="facts">
           <li><span class="fact-k">Since 2021</span><span class="fact-v">in offensive security</span></li>
           <li><span class="fact-k">ISO/SAE 21434</span><span class="fact-v">UN R155/156 · AIS 189</span></li>
+          <li><span class="fact-k">ScapyCon 2026</span><span class="fact-v">EV charger hacking workshop</span></li>
           <li><span class="fact-k">Founder</span><span class="fact-v">AutoSecurityy community</span></li>
         </ul>
       </div>
@@ -240,6 +242,8 @@
                 <li>Security Controls Design</li>
                 <li>Fuzz Testing</li>
                 <li>CAN / UDS</li>
+                <li>OCPP</li>
+                <li>BLE</li>
                 <li>MQTT</li>
                 <li>Hardware &amp; UART</li>
                 <li>Fault Injection</li>
@@ -272,18 +276,121 @@
 
 
     <!--
+      - #TALKS
+    -->
+
+    <section class="section" id="talks">
+      <div class="container">
+
+        <div class="section-head">
+          <p class="section-label">03 / Talks &amp; Workshops</p>
+          <h2 class="section-title">Teaching people to break chargers</h2>
+        </div>
+
+        <article class="talk-feature">
+
+          <div class="talk-gallery">
+            <figure class="talk-photo talk-photo-main"><img src="images/scapycon-2026-1.jpg" alt="Gagan presenting at the EV Charger Hacking workshop, attendees working on laptops" loading="lazy"></figure>
+            <figure class="talk-photo"><img src="images/scapycon-2026-2.jpg" alt="Workshop room at ScapyCon 2026" loading="lazy"></figure>
+            <figure class="talk-photo"><img src="images/scapycon-2026-3.jpg" alt="ScapyCon banner: Learn. Craft. Connect." loading="lazy"></figure>
+          </div>
+
+          <div class="talk-body">
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep 15–16, 2026 · Regensburg, Germany</span>
+              <span class="badge">Workshop</span>
+            </div>
+            <h3 class="talk-title">EV Charger Hacking Workshop</h3>
+            <p class="timeline-org">ScapyCon Automotive 2026 · with Benedikt Kopf</p>
+            <p class="talk-text">
+              A four-hour hands-on workshop built around one question: what can you actually do to a charging station if you're standing next to it in the car park? Every attendee got a real OCPP 1.6 charge point, Pocket EVSE flashed onto their own hardware, and worked from the wireless interface inwards to the OCPP layer, ending with a complete attack chain and a live charging session on a backend they controlled.
+            </p>
+            <div class="talk-links">
+              <a href="https://dissec.to/scapycon-automotive-2026/" class="link-arrow">Event page <ion-icon name="arrow-forward"></ion-icon></a>
+              <a href="https://www.linkedin.com/posts/gagan-bagh_evsecurity-ocpp-automotivecybersecurity-ugcPost-7510593879734427648-RB6r/" class="link-arrow">Workshop recap <ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+          </div>
+
+        </article>
+
+        <ul class="talk-list">
+          <li class="talk-row">
+            <span class="timeline-date">2025</span>
+            <div>
+              <h3 class="talk-row-title">Penetration Tester's Guide to OCPP</h3>
+              <p class="talk-row-meta">Talk · SAEINDIA PDP 2025 · Practical attack methodology against EV charging infrastructure</p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!--
       - #PROJECTS
     -->
 
-    <section class="section" id="projects">
+    <section class="section section-alt" id="projects">
       <div class="container">
 
-        <div class="section-head section-head-row">
-          <div>
-            <p class="section-label">03 / Projects</p>
-            <h2 class="section-title">Tools, research &amp; resources</h2>
-          </div>
+        <div class="section-head">
+          <p class="section-label">04 / Projects</p>
+          <h2 class="section-title">Things I've built</h2>
+        </div>
 
+        <h3 class="sub-title">Currently building</h3>
+
+        <ul class="build-grid">
+
+          <li class="build-card">
+            <div class="build-head">
+              <span class="build-icon"><ion-icon name="git-network-outline"></ion-icon></span>
+              <span class="badge"><span class="pulse"></span>In development</span>
+            </div>
+            <h3 class="build-title">CANfi</h3>
+            <p class="build-sub">Wireless CAN testing tool · since Oct 2026</p>
+            <p class="build-text">
+              A custom ESP32-based CAN tool for automotive security research. Works wireless or wired: monitor traffic and run tests remotely from a web dashboard, or use it as a CAN-to-USB adapter.
+            </p>
+            <ul class="build-features">
+              <li>Live CAN monitoring &amp; filtering</li>
+              <li>Frame injection &amp; replay</li>
+              <li>UDS diagnostics over ISO-TP</li>
+              <li>Trace logging &amp; analysis</li>
+              <li>OBD-II &amp; UDS test cases</li>
+              <li>SLCAN USB2CAN for SocketCAN</li>
+            </ul>
+            <ul class="tag-list">
+              <li>ESP32</li><li>CAN</li><li>UDS</li><li>SocketCAN</li>
+            </ul>
+          </li>
+
+          <li class="build-card">
+            <div class="build-head">
+              <span class="build-icon"><ion-icon name="flash-outline"></ion-icon></span>
+              <span class="badge"><span class="pulse"></span>In development</span>
+            </div>
+            <h3 class="build-title">Pocket EVSE</h3>
+            <p class="build-sub">OCPP 1.6 charge point in your pocket · since Jun 2026</p>
+            <p class="build-text">
+              A fully functional OCPP 1.6 charging point running on an ESP32, built for EV charging security research, CTF demonstrations and conference demos. It powered every attendee's target at the ScapyCon 2026 EV Charger Hacking workshop, no expensive hardware or lab required.
+            </p>
+            <ul class="build-features">
+              <li>Real OCPP 1.6J charge point</li>
+              <li>Runs on low-cost ESP32</li>
+              <li>Wireless attack surface</li>
+              <li>Built for CTFs &amp; workshops</li>
+            </ul>
+            <ul class="tag-list">
+              <li>ESP32</li><li>OCPP 1.6J</li><li>EVSE</li><li>Wi-Fi / BLE</li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <div class="projects-bar">
+          <h3 class="sub-title">Tools, research &amp; resources</h3>
           <div class="filter" role="group" aria-label="Filter projects">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="automotive security">Automotive Security</button>
@@ -395,24 +502,60 @@
       - #WRITING
     -->
 
-    <section class="section section-alt" id="writing">
+    <section class="section" id="writing">
       <div class="container">
 
         <div class="section-head section-head-row">
           <div>
-            <p class="section-label">04 / Writing</p>
+            <p class="section-label">05 / Writing</p>
             <h2 class="section-title">Notes from the bench</h2>
           </div>
-          <a href="https://medium.com/autosecurityy" class="link-arrow">All posts on Medium <ion-icon name="arrow-forward"></ion-icon></a>
+          <div class="talk-links">
+            <a href="https://carhackers.hashnode.dev/" class="link-arrow">Car Hackers Space <ion-icon name="arrow-forward"></ion-icon></a>
+            <a href="https://medium.com/autosecurityy" class="link-arrow">Medium <ion-icon name="arrow-forward"></ion-icon></a>
+          </div>
         </div>
 
         <ul class="post-list">
 
           <li class="post">
+            <a href="https://carhackers.hashnode.dev/ocpp-security-profiles-explained">
+              <figure class="post-img"><img src="https://cdn.hashnode.com/uploads/covers/6a4d915136156b25a44378f2/9eb70325-3df3-4d6c-9901-fc82d7f6ccd7.jpg" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <p class="post-date"><time datetime="2026-07-22">Jul 22, 2026</time> · Car Hackers Space</p>
+                <h3 class="post-title">OCPP Security Profiles Explained</h3>
+                <p class="post-text">Why TLS alone doesn't mean your EV charger is secure.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a href="https://carhackers.hashnode.dev/ev-charging-security-charging-into-compliance-before-the-breach-does">
+              <figure class="post-img"><img src="https://cdn.hashnode.com/uploads/covers/6a4d915136156b25a44378f2/089a72bb-e17b-4344-8635-d2fca1dcdd78.png" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <p class="post-date"><time datetime="2026-07-17">Jul 17, 2026</time> · Car Hackers Space</p>
+                <h3 class="post-title">EV Charging Security: Charging Into Compliance Before the Breach Does</h3>
+                <p class="post-text">A penetration tester's perspective on securing the next generation of EV charging infrastructure.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a href="https://carhackers.hashnode.dev/evse-infrastructure-attack-surfaces">
+              <figure class="post-img"><img src="https://cdn.hashnode.com/uploads/covers/6a4d915136156b25a44378f2/c3eab96f-1b7d-463f-983a-231089d7821f.jpg" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <p class="post-date"><time datetime="2026-07-08">Jul 8, 2026</time> · Car Hackers Space</p>
+                <h3 class="post-title">EVSE Infrastructure Attack Surfaces</h3>
+                <p class="post-text">Where EV charging infrastructure sits between embedded systems, cloud backends and payment processing, and how to attack it.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="post">
             <a href="https://medium.com/autosecurityy/taking-over-ros-robots-comic-style-47b3841df35d">
               <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*puCn1Ld6_IILgDFG2RpAQA.png" alt="" loading="lazy"></figure>
               <div class="post-body">
-                <time class="post-date" datetime="2024-09-21">Sep 21, 2024</time>
+                <p class="post-date"><time datetime="2024-09-21">Sep 21, 2024</time> · Medium</p>
                 <h3 class="post-title">Taking Over ROS Robots: Comic Style</h3>
                 <p class="post-text">How attackers can exploit an unauthenticated ROS network and take control of robots in just a few steps.</p>
               </div>
@@ -423,7 +566,7 @@
             <a href="https://infosecwriteups.com/my-understanding-of-voltage-fault-injection-crowbar-glitching-60a66403a2d8">
               <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L1ZyXDvo1GgiUWoX4Hxc_Q@2x.jpeg" alt="" loading="lazy"></figure>
               <div class="post-body">
-                <time class="post-date" datetime="2024-09-14">Sep 14, 2024</time>
+                <p class="post-date"><time datetime="2024-09-14">Sep 14, 2024</time> · InfoSec Write-ups</p>
                 <h3 class="post-title">Understanding Voltage Fault Injection — Glitching Attack</h3>
                 <p class="post-text">A deep dive into voltage fault injection (crowbar glitching) attacks on embedded systems.</p>
               </div>
@@ -434,7 +577,7 @@
             <a href="https://baudskidninja.medium.com/the-intersection-of-ai-autonomous-driving-and-cybersecurity-navigating-the-future-of-llms-in-7d3a667666bd">
               <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:0/1*-khxfsyYkdom12h-IQvY7g.png" alt="" loading="lazy"></figure>
               <div class="post-body">
-                <time class="post-date" datetime="2024-08-31">Aug 31, 2024</time>
+                <p class="post-date"><time datetime="2024-08-31">Aug 31, 2024</time> · Medium</p>
                 <h3 class="post-title">The Intersection of AI, Autonomous Driving, and Cybersecurity</h3>
                 <p class="post-text">What the integration of LLMs into autonomous driving means for vehicle security.</p>
               </div>
@@ -445,7 +588,7 @@
             <a href="https://medium.com/autosecurityy/how-to-become-a-vehicle-pentester-a48e579ff105">
               <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*C4PPDS6iGagVgVnsDl7nAw@2x.jpeg" alt="" loading="lazy"></figure>
               <div class="post-body">
-                <time class="post-date" datetime="2024-03-18">Mar 18, 2024</time>
+                <p class="post-date"><time datetime="2024-03-18">Mar 18, 2024</time> · Medium</p>
                 <h3 class="post-title">How to Become a Vehicle Pentester</h3>
                 <p class="post-text">A step-by-step guide on how to become a vehicle penetration tester.</p>
               </div>
@@ -456,7 +599,7 @@
             <a href="https://medium.com/autosecurityy/mqtt-in-connected-cars-and-hacking-them-part-1-90ae7f469bd2">
               <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hQWOYkQJGrQQnsJwWC_hBA.png" alt="" loading="lazy"></figure>
               <div class="post-body">
-                <time class="post-date" datetime="2022-08-07">Aug 07, 2022</time>
+                <p class="post-date"><time datetime="2022-08-07">Aug 07, 2022</time> · Medium</p>
                 <h3 class="post-title">MQTT in Connected Cars and Hacking Them</h3>
                 <p class="post-text">Understanding the basis of MQTT in automotive, and exploitation techniques.</p>
               </div>
@@ -467,7 +610,7 @@
             <a href="https://baudskidninja.medium.com/uart-shell-access-to-router-35c280bb1463">
               <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*DQNN-sVpMkMk7Pmjz9acqw.png" alt="" loading="lazy"></figure>
               <div class="post-body">
-                <time class="post-date" datetime="2022-02-07">Feb 07, 2022</time>
+                <p class="post-date"><time datetime="2022-02-07">Feb 07, 2022</time> · Medium</p>
                 <h3 class="post-title">UART — Shell Access to Router</h3>
                 <p class="post-text">A short write-up on gaining shell access to a router through UART.</p>
               </div>
@@ -484,11 +627,11 @@
       - #RECOMMENDATIONS
     -->
 
-    <section class="section" id="recommendations">
+    <section class="section section-alt" id="recommendations">
       <div class="container">
 
         <div class="section-head">
-          <p class="section-label">05 / Recommendations</p>
+          <p class="section-label">06 / Recommendations</p>
           <h2 class="section-title">What colleagues say</h2>
         </div>
 
@@ -525,9 +668,9 @@
     <section class="section contact" id="contact">
       <div class="container">
         <div class="contact-card">
-          <p class="section-label">06 / Contact</p>
+          <p class="section-label">07 / Contact</p>
           <h2 class="contact-title">Got a vehicle, ECU or charger that needs breaking?</h2>
-          <p class="contact-text">For pentest engagements, research collaborations or talks, drop me an email or reach out on LinkedIn.</p>
+          <p class="contact-text">For pentest engagements, research collaborations, workshops or talks, drop me an email or reach out on LinkedIn.</p>
           <div class="hero-actions">
             <a href="mailto:gaganbagh08@gmail.com" class="btn btn-primary"><ion-icon name="mail-outline"></ion-icon>gaganbagh08@gmail.com</a>
             <a href="https://www.linkedin.com/in/gagan-bagh/" class="btn btn-ghost"><ion-icon name="logo-linkedin"></ion-icon>LinkedIn</a>
