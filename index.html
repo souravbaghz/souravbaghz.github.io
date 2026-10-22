@@ -3,1186 +3,560 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gagan - Automotive Security Professional</title>
+  <title>Gagan Bagh — Automotive &amp; EV Security</title>
+  <meta name="description" content="Gagan Bagh, Senior Penetration Tester at BreachLabz. Offensive security for vehicles, ECUs, EV chargers and connected devices.">
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!--
-    - #MAIN
+    - #HEADER
   -->
 
-  <main>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
 
-    <!--
-      - #SIDEBAR
-    -->
+      <a href="#top" class="brand" aria-label="Gagan Bagh, home">
+        <span class="brand-mark">GB</span>
+        <span class="brand-name">Gagan Bagh</span>
+      </a>
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="images/my-avatar.png" alt="Gagan Bagh" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Gagan Bagh">GAGAN BAGH</h1>
-
-          <p class="title">Automotive Security Professional</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="gaganbagh08@gmail.com" class="contact-link">gaganbagh08@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+" class="contact-link"></a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">Feb 05, 2000</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">From</p>
-
-              <address>Bengaluru, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/gagan-bagh/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://x.com/souravbaghz" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/souravbaghz" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://medium.com/autosecurityy" class="social-link">
-              <ion-icon name="logo-medium"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <a href="/carss" class="navbar-link" data-nav-link style="text-decoration: none;">CARSS</a>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
+      <nav class="nav" data-nav>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#writing" class="nav-link">Writing</a>
+        <a href="/carss" class="nav-link">CARSS</a>
+        <a href="#contact" class="nav-link nav-cta">Contact</a>
       </nav>
 
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
 
+    </div>
+  </header>
 
+  <main id="top">
 
+    <!--
+      - #HERO
+    -->
 
-      <!--
-        - #ABOUT
-      -->
+    <section class="hero">
+      <div class="container hero-grid">
 
-      <article class="about  active" data-page="about">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse"></span>Senior Penetration Tester · BreachLabz</p>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <h1 class="hero-title">I break vehicles, chargers and connected devices, <span class="accent">before attackers do.</span></h1>
 
-        <section class="about-text">
-          <p>
-          I'm a Senior Penetration Tester at BreachLabz, where I lead offensive security engagements across automotive and EV ecosystems: ECUs, in-vehicle networks, EV chargers, backend systems and wireless interfaces, testing them the way real-world attackers would.
+          <p class="hero-text">
+            Offensive security across automotive and EV ecosystems: ECUs, in-vehicle networks, EV chargers, backends and wireless interfaces. Based in Bengaluru, India.
           </p>
 
-          <p>
-            Alongside hands-on testing, I build in-house pentesting tools to automate workflows and set up our dedicated automotive pentest lab. My background in ISO/SAE 21434, UN R155, TARA, CSMS and fuzz testing, gained helping OEMs and suppliers, lets me turn findings into actionable security controls. I also founded AutoSecurityy, a non-profit community for sharing automotive cybersecurity research and knowledge.
-          </p>
-        </section>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="#projects" class="btn btn-ghost">See my work</a>
+          </div>
 
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="images/icon-iso.svg
-                " alt="iso icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">ISO/SAE 21434</h4>
-
-                <p class="service-item-text">
-                  Threat Analysis & Risk Assessment, CSMS, Review and Gap Analysis.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="images/icon-code.svg" alt="vapt icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Penetration Testing</h4>
-
-                <p class="service-item-text">
-                  Vulnerability Analysis & Penetration Testing of Automotive Systems.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="images/icon-iot.svg" alt="iot icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">IoT Hacking</h4>
-
-                <p class="service-item-text">
-                  IoT Security Assessment at both System & Component-Level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="images/icon-ev.svg" alt="ev charger icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">EV Charger Hacking</h4>
-
-                <p class="service-item-text">
-                   Pentesting EV chargers, charging protocols &amp; backend systems.
-                </p>
-              </div>
-
-            </li>
-
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/in/gagan-bagh/" class="social-link" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://github.com/souravbaghz" class="social-link" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="https://x.com/souravbaghz" class="social-link" aria-label="X"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://medium.com/autosecurityy" class="social-link" aria-label="Medium"><ion-icon name="logo-medium"></ion-icon></a></li>
           </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Recommendations</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="images/avatar-1.png" alt="Rohit" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rohit</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    I had the pleasure of interacting with Gagan in the past and can confidently recommend him as a skilled Automotive Cybersecurity Professional. He has a great approach to penetration testing of automotive IoT systems and threat analysis, showcasing his expertise. Additionally, his overall experience & leadership abilities make him a valuable asset to any team.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="images/avatar-2.png" alt="Saloni" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Saloni</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Gagan is fantastic to work with, and has exceptional experience in cybersecurity field like Automotive, IoT & Networks Penetration Testing. He solve complex issues even when outside of his direct area of expertise. 
-
-For Gagan the job is obviously the most important thing to do. He is extremely enthusiastic about his work which is infectious. Energetic and broad-minded security professional- that's him!
-Definitely someone I'd want to to have on my team.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    soon.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    soon.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="images/avatar-1.png" alt="Rohit" width="80" data-modal-img>
-              </figure>
-
-              <img src="images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Rohit</h4>
-
-              <time datetime="2021-06-14">source: LinkedIn</time>
-
-              <div data-modal-text>
-                <p>
-                  soon.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
         </div>
 
+        <div class="hero-panel">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="terminal-title">candump can0</span>
+              <img src="images/my-avatar.png" alt="Gagan Bagh" class="terminal-avatar" width="36" height="36">
+            </div>
+            <pre class="terminal-body" aria-hidden="true" data-candump></pre>
+          </div>
+        </div>
 
-        <!--
-          - clients
-        -->
+      </div>
 
-        <section class="clients">
+      <div class="container">
+        <ul class="facts">
+          <li><span class="fact-k">Since 2021</span><span class="fact-v">in offensive security</span></li>
+          <li><span class="fact-k">ISO/SAE 21434</span><span class="fact-v">UN R155/156 · AIS 189</span></li>
+          <li><span class="fact-k">Founder</span><span class="fact-v">AutoSecurityy community</span></li>
+        </ul>
+      </div>
+    </section>
 
-          <h3 class="h3 clients-title">Product types, I've worked on</h3>
 
-          <ul class="clients-list has-scrollbar">
+    <!--
+      - #ABOUT
+    -->
 
-            <li class="clients-item">
-              <a href="#" title="Connected passenger &amp; autonomous vehicles">
-                <img src="images/prod-vehicle.svg" alt="Connected passenger &amp; autonomous vehicles">
-              </a>
+    <section class="section" id="about">
+      <div class="container">
+
+        <div class="section-head">
+          <p class="section-label">01 / About</p>
+          <h2 class="section-title">Thinking like an attacker, building for defenders</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a Senior Penetration Tester at BreachLabz, where I lead offensive security engagements across automotive and EV ecosystems: ECUs, in-vehicle networks, EV chargers, backend systems and wireless interfaces, testing them the way real-world attackers would.
+            </p>
+            <p>
+              Alongside hands-on testing, I build in-house pentesting tools to automate workflows and set up our dedicated automotive pentest lab. My background in ISO/SAE 21434, UN R155, TARA, CSMS and fuzz testing, gained helping OEMs and suppliers, lets me turn findings into actionable security controls. I also founded <a href="https://autosecurityy.com" class="link">AutoSecurityy</a>, a non-profit community for sharing automotive cybersecurity research and knowledge.
+            </p>
+          </div>
+
+          <ul class="service-list">
+            <li class="service-card">
+              <ion-icon name="car-sport-outline"></ion-icon>
+              <h3>Penetration Testing</h3>
+              <p>Vulnerability analysis and penetration testing of automotive systems.</p>
             </li>
-
-            <li class="clients-item">
-              <a href="#" title="Two-wheelers">
-                <img src="images/prod-twowheeler.svg" alt="Two-wheelers">
-              </a>
+            <li class="service-card">
+              <ion-icon name="flash-outline"></ion-icon>
+              <h3>EV Charger Hacking</h3>
+              <p>Pentesting EV chargers, charging protocols and backend systems.</p>
             </li>
-
-            <li class="clients-item">
-              <a href="#" title="ECUs &amp; in-vehicle networks">
-                <img src="images/prod-ecu.svg" alt="ECUs &amp; in-vehicle networks">
-              </a>
+            <li class="service-card">
+              <ion-icon name="hardware-chip-outline"></ion-icon>
+              <h3>IoT Hacking</h3>
+              <p>IoT security assessment at both system and component level.</p>
             </li>
-
-            <li class="clients-item">
-              <a href="#" title="EV chargers">
-                <img src="images/prod-evcharger.svg" alt="EV chargers">
-              </a>
+            <li class="service-card">
+              <ion-icon name="shield-checkmark-outline"></ion-icon>
+              <h3>ISO/SAE 21434</h3>
+              <p>Threat analysis and risk assessment, CSMS, review and gap analysis.</p>
             </li>
-
-            <li class="clients-item">
-              <a href="#" title="Wireless interfaces &amp; IoT devices">
-                <img src="images/prod-wireless.svg" alt="Wireless interfaces &amp; IoT devices">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#" title="Cloud &amp; backend systems">
-                <img src="images/prod-cloud.svg" alt="Cloud &amp; backend systems">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#" title="Robots &amp; autonomous systems">
-                <img src="images/prod-robot.svg" alt="Robots &amp; autonomous systems">
-              </a>
-            </li>
-
           </ul>
+        </div>
 
-        </section>
+        <div class="surface">
+          <h3 class="sub-title">Attack surfaces I've worked on</h3>
+          <ul class="surface-list">
+            <li><img src="images/prod-vehicle.svg" alt="" width="44" height="44"><span>Passenger &amp; autonomous vehicles</span></li>
+            <li><img src="images/prod-twowheeler.svg" alt="" width="44" height="44"><span>Two-wheelers</span></li>
+            <li><img src="images/prod-ecu.svg" alt="" width="44" height="44"><span>ECUs &amp; in-vehicle networks</span></li>
+            <li><img src="images/prod-evcharger.svg" alt="" width="44" height="44"><span>EV chargers</span></li>
+            <li><img src="images/prod-wireless.svg" alt="" width="44" height="44"><span>Wireless &amp; IoT devices</span></li>
+            <li><img src="images/prod-cloud.svg" alt="" width="44" height="44"><span>Cloud &amp; backend systems</span></li>
+            <li><img src="images/prod-robot.svg" alt="" width="44" height="44"><span>Robots &amp; autonomous systems</span></li>
+          </ul>
+        </div>
 
-      </article>
+      </div>
+    </section>
 
 
+    <!--
+      - #EXPERIENCE
+    -->
 
+    <section class="section section-alt" id="experience">
+      <div class="container">
 
+        <div class="section-head">
+          <p class="section-label">02 / Experience</p>
+          <h2 class="section-title">Where I've been testing</h2>
+        </div>
 
-      <!--
-        - #RESUME
-      -->
+        <div class="exp-grid">
 
-      <article class="resume" data-page="resume">
+          <ol class="timeline">
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-            
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Amity University(Online)</h4>
-
-              <span>2024 — 2027</span>
-
-              <p class="timeline-text">
-                Pursuing BCA with Cloud & Security to gain a competitive edge by acquiring expertise in the critical domains of cloud computing, data security, and analytics. 
-              </p>
-
-            </li>
-            
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Anchalik Sahayog Jr. College</h4>
-
-              <span>2015 — 2017</span>
-
-              <p class="timeline-text">
-                +2 Science with Physics, Chemisty & Math
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="bag-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Senior Penetration Tester</h4>
-
-              <span>At BreachLabz, Bengaluru</span>
-              <span>2026 — Present</span>
-
+            <li class="timeline-item current">
+              <div class="timeline-meta">
+                <span class="timeline-date">2026 — Present</span>
+                <span class="badge">Current</span>
+              </div>
+              <h3 class="timeline-role">Senior Penetration Tester</h3>
+              <p class="timeline-org">BreachLabz, Bengaluru</p>
               <p class="timeline-text">
                 Leading penetration testing engagements across automotive and EV ecosystems, including ECUs, in-vehicle networks, EV chargers, backend systems, and wireless interfaces, simulating real-world attacker capabilities. Designing and developing in-house pentesting tools to automate testing workflows across automotive, EV charger and IoT systems, and built our dedicated automotive pentest lab for end-to-end security testing under realistic attack conditions.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Associate Consultant</h4>
-
-              <span>At Yarix India Pvt. Ltd (Formerly CYRES Consulting)</span>
-              <span>2025 — 2026</span>
-
+              <div class="timeline-meta"><span class="timeline-date">2025 — 2026</span></div>
+              <h3 class="timeline-role">Associate Consultant</h3>
+              <p class="timeline-org">Yarix India Pvt. Ltd (Formerly CYRES Consulting)</p>
               <p class="timeline-text">
                 Joined the Automotive CS Engineering Team, I apply my expertise in Threat Analysis, Penetration Testing, and compliances to enhance CSMS, TARA, and CS Controls. I support gap analysis and work product development in line with ISO/SAE 21434, UNECE R155/156, and AIS 189, focusing on securing ECUs, passenger vehicles, and two-wheelers.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Automotive Cybersecurity Team Lead</h4>
-
-              <span>At HackersEra, INDIA</span>
-              <span>2024 — 2025</span>
-
+              <div class="timeline-meta"><span class="timeline-date">2024 — 2025</span></div>
+              <h3 class="timeline-role">Automotive Cybersecurity Team Lead</h3>
+              <p class="timeline-org">HackersEra, India</p>
               <p class="timeline-text">
-                Leading team & contributing for penetration testing engagements and TARA aligned with UN R155 & ISO/SAE 21434 to identify and reduce security risks in the automotive systems. Worked on various passengers and autonomous vehicles.
+                Leading team &amp; contributing for penetration testing engagements and TARA aligned with UN R155 &amp; ISO/SAE 21434 to identify and reduce security risks in the automotive systems. Worked on various passengers and autonomous vehicles.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Security Consultant</h4>
-
-              <span>At HackersEra, INDIA</span>
-              <span>2022 — 2024</span>
-
+              <div class="timeline-meta"><span class="timeline-date">2022 — 2024</span></div>
+              <h3 class="timeline-role">Security Consultant</h3>
+              <p class="timeline-org">HackersEra, India</p>
               <p class="timeline-text">
                 Led ECUs penetration testing for over 5+ units and vehicle security assessments for over 6 connected cars. Additionally threat-modelling and security validation testing for ethernet-based ECUs.
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Security Analyst</h4>
-
-              <span>At HackersEra, INDIA</span>
-              <span>2021 — 2022</span>
-
+              <div class="timeline-meta"><span class="timeline-date">2021 — 2022</span></div>
+              <h3 class="timeline-role">Security Analyst</h3>
+              <p class="timeline-org">HackersEra, India</p>
               <p class="timeline-text">
-                Contributed in various penetration tests which includes IoT devices, networks, and managed defect analysis & vulnerabilties of connected cars.
+                Contributed in various penetration tests which includes IoT devices, networks, and managed defect analysis &amp; vulnerabilities of connected cars.
               </p>
-
             </li>
 
           </ol>
 
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Vulnerability Assessment & Penetration Testing</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Threat Analysis & Risk Assessment</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Security Controls Design</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Bash Scripting</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Vehicle Safety & Legal</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Scripts</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Automotive Security</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Vehicle Safety & Legal</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Scripts</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Automotive Security</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="automotive security">
-              <a href="https://github.com/AutoSecurityy/Automotive-Cybersecurity-Roadmap">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://raw.githubusercontent.com/AutoSecurityy/Automotive-Cybersecurity-Roadmap/refs/heads/main/roadmap_banner.png" alt="automotive" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Automotive Cybersecurity Career Roadmap</h3>
-
-                <p class="project-category">Automotive Security</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="automotive security">
-              <a href="https://www.linkedin.com/posts/gagan-bagh_cybersecurity-autonomousvehicles-robotics-activity-7225019413689720832-HvGM">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="images/ros.jpeg" alt="ros" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">A Threat to Autonomous Vehicles & Robots</h3>
-
-                <p class="project-category">Automotive Security</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="vehicle safety & legal">
-              <a href="https://www.linkedin.com/posts/gagan-bagh_automotivesafety-edr-vehicledata-activity-7216606191945146368-4iBF">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="images/edr.jpeg" alt="EDR" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">EDR in Vehicles</h3>
-
-                <p class="project-category">Vehicle Safety & Legal</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="articles">
-              <a href="https://www.linkedin.com/pulse/comprehensive-automotive-cybersecurity-guide-car-owners-3nfzc">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="images/for-car-owner.png" alt="article" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">A Comprehensive Automotive Cybersecurity Guide for Car Owners</h3>
-
-                <p class="project-category">Articles</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="automotive security">
-              <a href="https://nas.io/autosecurityy/products/tgdj">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="images/ebook.jpeg" alt="ebook" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Kickstart to Automotive Cybersecurity eBook</h3>
-
-                <p class="project-category">Automotive Security</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="scripts">
-              <a href="https://github.com/souravbaghz/Carpunk">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="images/carpunk.png" alt="carpunk" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Carpunk v2</h3>
-
-                <p class="project-category">Scripts</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="scripts">
-              <a href="https://github.com/souravbaghz/MQTTack">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="images/mqttack.png" alt="mqttack" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MQTTack</h3>
-
-                <p class="project-category">Scripts</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="scripts">
-              <a href="https://github.com/AutoSecurityy/potenci">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="images/potenci.png" alt="potenci" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">potenci - mqtt bruteforcer</h3>
-
-                <p class="project-category">Scripts</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="scripts">
-              <a href="https://github.com/souravbaghz/playuds">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="https://raw.githubusercontent.com/souravbaghz/playuds/refs/heads/main/img/playuds_banner.png" alt="potenci" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">PlayUDS - UDS Simulation</h3>
-
-                <p class="project-category">Scripts</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://baudskidninja.medium.com/the-intersection-of-ai-autonomous-driving-and-cybersecurity-navigating-the-future-of-llms-in-7d3a667666bd">
-
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:0/1*-khxfsyYkdom12h-IQvY7g.png" alt="AutoSecurityy Community" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Medium</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-31-08">Aug 31, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The Intersection of AI, Autonomous Driving, and Cybersecurity</h3>
-
-                  <p class="blog-text">
-                    As autonomous driving technology continues to advance, the integration of artificial intelligence (AI), particularly Large Language Models (LLMs) has started becoming a key focus...
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/autosecurityy/mqtt-in-connected-cars-and-hacking-them-part-1-90ae7f469bd2">
-
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hQWOYkQJGrQQnsJwWC_hBA.png" alt="MQTT Hacking" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Medium</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-08-07">Aug 07, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">MQTT in Connected Cars and Hacking Them</h3>
-
-                  <p class="blog-text">
-                    Understanding the basis of MQTT in Automotive & Exploitation Techniques.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://baudskidninja.medium.com/uart-shell-access-to-router-35c280bb1463">
-
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*DQNN-sVpMkMk7Pmjz9acqw.png" alt="UART-Shell Access to Router" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Medium</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-07">Feb 07, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UART-Shell Access to Router</h3>
-
-                  <p class="blog-text">
-                    Short write-up on how I gained shell access to my PG room’s router through UART.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/autosecurityy/how-to-become-a-vehicle-pentester-a48e579ff105">
-
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*C4PPDS6iGagVgVnsDl7nAw@2x.jpeg" alt="vehicle pentester" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Medium</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-03-18">Mar 18, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">How to become a Vehicle Pentester</h3>
-
-                  <p class="blog-text">
-                    Here’s a step-by-step guide on how to become a vehicle penetration tester.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://infosecwriteups.com/my-understanding-of-voltage-fault-injection-crowbar-glitching-60a66403a2d8">
-
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L1ZyXDvo1GgiUWoX4Hxc_Q@2x.jpeg" alt="Understanding Voltage Fault Injection – Glitching Attack" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Medium</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-09-14">Sept 14, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Understanding Voltage Fault Injection – Glitching Attack</h3>
-
-                  <p class="blog-text">
-                    In recent times, there has been quite a buzz around Voltage Fault Injection (VFI) attacks, especially when it comes to embedded systems. Being an hardware hacking enthusiast, I couldn’t resist diving deep into this subject. Read More...
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/autosecurityy/taking-over-ros-robots-comic-style-47b3841df35d">
-
-                <figure class="blog-banner-box">
-                  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*puCn1Ld6_IILgDFG2RpAQA.png" alt="Taking Over ROS Robots: Comic Style" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Medium</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-09-21">Sept, 21, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Taking Over ROS Robots: Comic Style</h3>
-
-                  <p class="blog-text">
-                    In this short comic story themed post, I will show you how hackers can exploit an unauthenticated ROS (Robot Operating System) network and take control of robots in just a few steps!                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          <aside class="exp-side">
+
+            <div class="side-card">
+              <h3 class="sub-title">Toolbox</h3>
+              <ul class="tag-list">
+                <li>Penetration Testing</li>
+                <li>Vulnerability Assessment</li>
+                <li>TARA</li>
+                <li>Security Controls Design</li>
+                <li>Fuzz Testing</li>
+                <li>CAN / UDS</li>
+                <li>MQTT</li>
+                <li>Hardware &amp; UART</li>
+                <li>Fault Injection</li>
+                <li>Bash Scripting</li>
+                <li>ISO/SAE 21434</li>
+                <li>UN R155 / R156</li>
+                <li>AIS 189</li>
+                <li>CSMS</li>
+              </ul>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <div class="side-card">
+              <h3 class="sub-title">Education</h3>
+              <div class="edu">
+                <p class="edu-name">Amity University (Online)</p>
+                <p class="edu-meta">2024 — 2027 · BCA, Cloud &amp; Security</p>
+              </div>
+              <div class="edu">
+                <p class="edu-name">Anchalik Sahayog Jr. College</p>
+                <p class="edu-meta">2015 — 2017 · +2 Science (PCM)</p>
+              </div>
+            </div>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+          </aside>
 
-          </form>
+        </div>
 
-        </section>
+      </div>
+    </section>
 
-      </article>
 
-    </div>
+    <!--
+      - #PROJECTS
+    -->
+
+    <section class="section" id="projects">
+      <div class="container">
+
+        <div class="section-head section-head-row">
+          <div>
+            <p class="section-label">03 / Projects</p>
+            <h2 class="section-title">Tools, research &amp; resources</h2>
+          </div>
+
+          <div class="filter" role="group" aria-label="Filter projects">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="automotive security">Automotive Security</button>
+            <button class="filter-btn" data-filter="scripts">Tools</button>
+            <button class="filter-btn" data-filter="articles">Articles</button>
+            <button class="filter-btn" data-filter="vehicle safety & legal">Safety &amp; Legal</button>
+          </div>
+        </div>
+
+        <ul class="project-grid">
+
+          <li class="project" data-category="scripts">
+            <a href="https://github.com/souravbaghz/playuds">
+              <figure class="project-img"><img src="https://raw.githubusercontent.com/souravbaghz/playuds/refs/heads/main/img/playuds_banner.png" alt="PlayUDS banner" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Tool</p>
+                <h3 class="project-title">PlayUDS — UDS Simulation</h3>
+              </div>
+            </a>
+          </li>
+
+          <li class="project" data-category="automotive security">
+            <a href="https://github.com/AutoSecurityy/Automotive-Cybersecurity-Roadmap">
+              <figure class="project-img"><img src="https://raw.githubusercontent.com/AutoSecurityy/Automotive-Cybersecurity-Roadmap/refs/heads/main/roadmap_banner.png" alt="Automotive cybersecurity roadmap banner" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Automotive Security</p>
+                <h3 class="project-title">Automotive Cybersecurity Career Roadmap</h3>
+              </div>
+            </a>
+          </li>
+
+          <li class="project" data-category="scripts">
+            <a href="https://github.com/souravbaghz/Carpunk">
+              <figure class="project-img"><img src="images/carpunk.png" alt="Carpunk" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Tool</p>
+                <h3 class="project-title">Carpunk v2</h3>
+              </div>
+            </a>
+          </li>
+
+          <li class="project" data-category="scripts">
+            <a href="https://github.com/souravbaghz/MQTTack">
+              <figure class="project-img"><img src="images/mqttack.png" alt="MQTTack" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Tool</p>
+                <h3 class="project-title">MQTTack</h3>
+              </div>
+            </a>
+          </li>
+
+          <li class="project" data-category="scripts">
+            <a href="https://github.com/AutoSecurityy/potenci">
+              <figure class="project-img"><img src="images/potenci.png" alt="potenci" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Tool</p>
+                <h3 class="project-title">potenci — MQTT bruteforcer</h3>
+              </div>
+            </a>
+          </li>
+
+          <li class="project" data-category="automotive security">
+            <a href="https://nas.io/autosecurityy/products/tgdj">
+              <figure class="project-img"><img src="images/ebook.jpeg" alt="Kickstart to Automotive Cybersecurity eBook" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Automotive Security</p>
+                <h3 class="project-title">Kickstart to Automotive Cybersecurity eBook</h3>
+              </div>
+            </a>
+          </li>
+
+          <li class="project" data-category="automotive security">
+            <a href="https://www.linkedin.com/posts/gagan-bagh_cybersecurity-autonomousvehicles-robotics-activity-7225019413689720832-HvGM">
+              <figure class="project-img"><img src="images/ros.jpeg" alt="ROS robots" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Automotive Security</p>
+                <h3 class="project-title">A Threat to Autonomous Vehicles &amp; Robots</h3>
+              </div>
+            </a>
+          </li>
+
+          <li class="project" data-category="articles">
+            <a href="https://www.linkedin.com/pulse/comprehensive-automotive-cybersecurity-guide-car-owners-3nfzc">
+              <figure class="project-img"><img src="images/for-car-owner.png" alt="Guide for car owners" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Article</p>
+                <h3 class="project-title">A Comprehensive Automotive Cybersecurity Guide for Car Owners</h3>
+              </div>
+            </a>
+          </li>
+
+          <li class="project" data-category="vehicle safety & legal">
+            <a href="https://www.linkedin.com/posts/gagan-bagh_automotivesafety-edr-vehicledata-activity-7216606191945146368-4iBF">
+              <figure class="project-img"><img src="images/edr.jpeg" alt="EDR in vehicles" loading="lazy"></figure>
+              <div class="project-body">
+                <p class="project-cat">Safety &amp; Legal</p>
+                <h3 class="project-title">EDR in Vehicles</h3>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!--
+      - #WRITING
+    -->
+
+    <section class="section section-alt" id="writing">
+      <div class="container">
+
+        <div class="section-head section-head-row">
+          <div>
+            <p class="section-label">04 / Writing</p>
+            <h2 class="section-title">Notes from the bench</h2>
+          </div>
+          <a href="https://medium.com/autosecurityy" class="link-arrow">All posts on Medium <ion-icon name="arrow-forward"></ion-icon></a>
+        </div>
+
+        <ul class="post-list">
+
+          <li class="post">
+            <a href="https://medium.com/autosecurityy/taking-over-ros-robots-comic-style-47b3841df35d">
+              <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*puCn1Ld6_IILgDFG2RpAQA.png" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <time class="post-date" datetime="2024-09-21">Sep 21, 2024</time>
+                <h3 class="post-title">Taking Over ROS Robots: Comic Style</h3>
+                <p class="post-text">How attackers can exploit an unauthenticated ROS network and take control of robots in just a few steps.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a href="https://infosecwriteups.com/my-understanding-of-voltage-fault-injection-crowbar-glitching-60a66403a2d8">
+              <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L1ZyXDvo1GgiUWoX4Hxc_Q@2x.jpeg" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <time class="post-date" datetime="2024-09-14">Sep 14, 2024</time>
+                <h3 class="post-title">Understanding Voltage Fault Injection — Glitching Attack</h3>
+                <p class="post-text">A deep dive into voltage fault injection (crowbar glitching) attacks on embedded systems.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a href="https://baudskidninja.medium.com/the-intersection-of-ai-autonomous-driving-and-cybersecurity-navigating-the-future-of-llms-in-7d3a667666bd">
+              <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:0/1*-khxfsyYkdom12h-IQvY7g.png" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <time class="post-date" datetime="2024-08-31">Aug 31, 2024</time>
+                <h3 class="post-title">The Intersection of AI, Autonomous Driving, and Cybersecurity</h3>
+                <p class="post-text">What the integration of LLMs into autonomous driving means for vehicle security.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a href="https://medium.com/autosecurityy/how-to-become-a-vehicle-pentester-a48e579ff105">
+              <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*C4PPDS6iGagVgVnsDl7nAw@2x.jpeg" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <time class="post-date" datetime="2024-03-18">Mar 18, 2024</time>
+                <h3 class="post-title">How to Become a Vehicle Pentester</h3>
+                <p class="post-text">A step-by-step guide on how to become a vehicle penetration tester.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a href="https://medium.com/autosecurityy/mqtt-in-connected-cars-and-hacking-them-part-1-90ae7f469bd2">
+              <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*hQWOYkQJGrQQnsJwWC_hBA.png" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <time class="post-date" datetime="2022-08-07">Aug 07, 2022</time>
+                <h3 class="post-title">MQTT in Connected Cars and Hacking Them</h3>
+                <p class="post-text">Understanding the basis of MQTT in automotive, and exploitation techniques.</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="post">
+            <a href="https://baudskidninja.medium.com/uart-shell-access-to-router-35c280bb1463">
+              <figure class="post-img"><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*DQNN-sVpMkMk7Pmjz9acqw.png" alt="" loading="lazy"></figure>
+              <div class="post-body">
+                <time class="post-date" datetime="2022-02-07">Feb 07, 2022</time>
+                <h3 class="post-title">UART — Shell Access to Router</h3>
+                <p class="post-text">A short write-up on gaining shell access to a router through UART.</p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!--
+      - #RECOMMENDATIONS
+    -->
+
+    <section class="section" id="recommendations">
+      <div class="container">
+
+        <div class="section-head">
+          <p class="section-label">05 / Recommendations</p>
+          <h2 class="section-title">What colleagues say</h2>
+        </div>
+
+        <div class="quote-grid">
+          <figure class="quote">
+            <blockquote>
+              I had the pleasure of interacting with Gagan in the past and can confidently recommend him as a skilled Automotive Cybersecurity Professional. He has a great approach to penetration testing of automotive IoT systems and threat analysis, showcasing his expertise. Additionally, his overall experience &amp; leadership abilities make him a valuable asset to any team.
+            </blockquote>
+            <figcaption>
+              <img src="images/avatar-1.png" alt="" width="44" height="44">
+              <span><strong>Rohit</strong><br>via LinkedIn</span>
+            </figcaption>
+          </figure>
+
+          <figure class="quote">
+            <blockquote>
+              Gagan is fantastic to work with, and has exceptional experience in cybersecurity field like Automotive, IoT &amp; Networks Penetration Testing. He solve complex issues even when outside of his direct area of expertise. He is extremely enthusiastic about his work which is infectious. Energetic and broad-minded security professional — that's him! Definitely someone I'd want to have on my team.
+            </blockquote>
+            <figcaption>
+              <img src="images/avatar-2.png" alt="" width="44" height="44">
+              <span><strong>Saloni</strong><br>via LinkedIn</span>
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--
+      - #CONTACT
+    -->
+
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <p class="section-label">06 / Contact</p>
+          <h2 class="contact-title">Got a vehicle, ECU or charger that needs breaking?</h2>
+          <p class="contact-text">For pentest engagements, research collaborations or talks, drop me an email or reach out on LinkedIn.</p>
+          <div class="hero-actions">
+            <a href="mailto:gaganbagh08@gmail.com" class="btn btn-primary"><ion-icon name="mail-outline"></ion-icon>gaganbagh08@gmail.com</a>
+            <a href="https://www.linkedin.com/in/gagan-bagh/" class="btn btn-ghost"><ion-icon name="logo-linkedin"></ion-icon>LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
 
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Gagan Bagh · Bengaluru, India</p>
+      <ul class="social-list">
+        <li><a href="https://www.linkedin.com/in/gagan-bagh/" class="social-link" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://github.com/souravbaghz" class="social-link" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="https://x.com/souravbaghz" class="social-link" aria-label="X"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://medium.com/autosecurityy" class="social-link" aria-label="Medium"><ion-icon name="logo-medium"></ion-icon></a></li>
+      </ul>
+    </div>
+  </footer>
 
 
-
-
-  <!--
-    - custom js link
-  -->
   <script src="script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
 </html>
-
