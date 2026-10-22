@@ -692,6 +692,10 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 
 .build-head .badge { background: rgba(79, 209, 165, 0.1); color: var(--signal); }
 
+.build-head .badge-done { display: inline-flex; align-items: center; gap: 5px; background: var(--accent-soft); color: var(--accent); }
+
+.badge-done ion-icon { font-size: 13px; }
+
 .build-title { font-family: var(--ff-display); font-size: 24px; font-weight: 600; line-height: 1.2; }
 
 .build-sub { font-family: var(--ff-mono); font-size: 13px; color: var(--accent); margin-bottom: 12px; }
