@@ -613,11 +613,21 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 
 .talk-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
 
+.talk-feature + .talk-feature { margin-top: 18px; }
+
+.talk-photo-solo { margin: 4px; min-height: 220px; }
+
+.talk-photo-solo img { object-position: 20% center; }
+
+.build-features.talk-highlights { grid-template-columns: 1fr; margin-bottom: 20px; color: var(--text-muted); }
+
+.talk-highlights:last-child { margin-bottom: 0; }
+
 .talk-list { margin-top: 18px; }
 
 .talk-row {
   display: grid;
-  grid-template-columns: 64px 1fr;
+  grid-template-columns: 72px 1fr;
   gap: 16px;
   padding: 18px 22px;
   border: 1px solid var(--border);
@@ -629,6 +639,12 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .talk-row-title { font-family: var(--ff-display); font-size: 17px; font-weight: 600; }
 
 .talk-row-meta { font-size: 14px; color: var(--text-muted); }
+
+.talk-row-link { display: inline-flex; align-items: center; gap: 6px; transition: color 0.2s; }
+
+.talk-row-link:hover { color: var(--accent); }
+
+.talk-row-link ion-icon { font-size: 15px; color: var(--accent); }
 
 
 /*-----------------------------------*\
@@ -980,6 +996,8 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   .project-grid { grid-template-columns: repeat(3, 1fr); }
 
   .talk-feature { grid-template-columns: 1.15fr 1fr; }
+
+  .talk-feature-single { grid-template-columns: 1fr 1.15fr; }
 
   .talk-body { padding: 36px 36px 36px 8px; }
 
