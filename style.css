@@ -744,7 +744,7 @@ main {
 }
 
 .clients-item {
-  min-width: 50%;
+  min-width: calc(33.33% - 10px);
   scroll-snap-align: start;
 }
 
@@ -1239,7 +1239,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * client
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
+  .clients-item { min-width: calc(25% - 12px); }
 
 
 
@@ -1480,7 +1480,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  .clients-item { min-width: calc(25% - 38px); }
 
 
 
@@ -1736,7 +1736,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* clients */
 
-  .clients-item { min-width: calc(25% - 38px); }
+  .clients-item { min-width: calc(20% - 40px); }
 
 
 
